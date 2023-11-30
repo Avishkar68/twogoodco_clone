@@ -1,3 +1,22 @@
+@font-face {
+    font-family: Futura;
+    src: url(./Futura-Bold.ttf);
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(./Gilroy-Medium.ttf);
+}
+
+
+@font-face {
+    font-family: HelveticaNowText;
+    src: url(./HelveticaNowText-Regular.ttf);
+}
+@font-face {
+    font-family: ABCSocialMono;
+    src: url(./ABCSocialMono-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
