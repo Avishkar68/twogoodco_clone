@@ -7,16 +7,22 @@
     src: url(./Gilroy-Medium.ttf);
 }
 
-
+@font-face {
+    font-family: "ABC Social Mono";
+    src: url('ABCSocialMono-Regular.woff2') format('woff2'); /* Replace 'path/to/abc-social-mono.woff2' with the actual path to your font file */
+    /* Add other font formats (eot, svg) if needed */
+    /* Additional font properties (font-weight, font-style) if applicable */
+}
+@font-face {
+    font-family: "Helvetica Now Text";
+    src: url('HelveticaNowText-Regular.woff2') format('woff2'); /* Replace 'path/to/helvetica-now-text.woff2' with the actual path to your font file */
+    /* Add other font formats (eot, svg) if needed */
+    /* Additional font properties (font-weight, font-style) if applicable */
+}
 @font-face {
     font-family: HelveticaNowText;
     src: url(./HelveticaNowText-Regular.ttf);
 }
-@font-face {
-    font-family: ABCSocialMono;
-    src: url(./ABCSocialMono-Regular.ttf);
-}
-
 *{
     margin: 0;
     padding: 0;
