@@ -658,7 +658,7 @@ ul,li{
         width: 70px;
 
         overflow: hidden;
-        position: fixed;
+        
     }
     #svg-container svg{
         /* position: fixed; */
@@ -709,7 +709,7 @@ ul,li{
         margin-top: -6px;
         margin-right: 3px;
         border-radius: 40px;
-        position: fixed;
+        
 
     }
 
