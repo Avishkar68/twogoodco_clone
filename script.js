@@ -186,3 +186,22 @@ function cursorAnimation() {
     });
   }
   cursorAnimation();
+
+
+function darkm(){
+  const container = document.querySelector(".bdy");
+  let isDarkMode = false;
+  
+  container.addEventListener('dblclick', () => {
+      if (isDarkMode) {
+          document.body.classList.remove('dark-mode');
+          isDarkMode = false;
+      } else {
+          document.body.classList.add('dark-mode');
+          isDarkMode = true;
+      }
+  });
+}
+
+darkm();
+  
