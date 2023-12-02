@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+
 @font-face {
     font-family: Futura;
     src: url(./Futura-Bold.ttf);
@@ -23,22 +26,37 @@
     font-family: HelveticaNowText;
     src: url(./HelveticaNowText-Regular.ttf);
 }
+
+:root {
+    --primary-color: #f7f7f7;
+    --secondary-color: #000000;
+}
+
+.dark-mode{
+    --primary-color: #000000;
+    --secondary-color: #f7f7f7;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 *::selection{
-    color: #f7f7f7;
-    background-color: black;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 html,body{
     height: 100%;
     width: 100%;
-    background-color: #f7f7f7;
+    background-color: var(--primary-color);
 }
+
 
 hr{
     width: 97vw;
@@ -82,11 +100,11 @@ ul,li{
 
     font-size: 12px;
     line-height: 18px;
-    color: #000000;
+    color: var(--secondary-color);
 }
 
 #links a{
-    color: #000000;
+    color: var(--secondary-color);
 }
 #nav-part2 #links{
     display: flex;
@@ -106,6 +124,7 @@ ul,li{
     height: 36px;
     width: 130px;
     background-color: #f7f7f7;
+    color: #000000;
     margin-top: -6px;
     border-radius: 40px;
 }
@@ -114,7 +133,7 @@ ul,li{
     height: 180px;
     width: 180px;
     background-color: #faebe5;
-    /* background-color: black; */
+    /* background-color: var(--secondary-color); */
     border-radius: 50%;
     position: fixed;
     transform: translate(-50%,-50%) scale(0);
@@ -134,6 +153,7 @@ ul,li{
     font-family: futura;
     line-height: 14vw;
     letter-spacing: -8px;
+    color: var(--secondary-color);
 }
 
 #video-container{
@@ -156,7 +176,7 @@ ul,li{
 #play{
     padding: 2.3vw 1.5vw;
     background-color: #f7f7f7;
-    color: black;
+    color: #000000;
     font-size: 1.3vw;
     position: fixed;
     text-transform: uppercase;
@@ -238,6 +258,8 @@ ul,li{
     align-items: start;
     justify-content: space-between;
     flex-wrap: wrap;
+    color: var(--secondary-color);
+    
 }
 
 .text-page-section1{
@@ -276,7 +298,8 @@ ul,li{
 }
 
 .text-page-section2 #third{
-    color: rgb(74, 74, 74);
+    color: var(--secondary-color);
+
     font-size: 12px;
     line-height: 18px;
     text-align: start;
@@ -286,7 +309,7 @@ ul,li{
     text-transform: uppercase;
     width: fit-content;
     padding-bottom: 4px;
-    /* border-bottom: 1px solid black; */
+    /* border-bottom: 1px solid var(--secondary-color); */
 }
 
 .text-page-section2 #third-underline{
@@ -295,7 +318,7 @@ ul,li{
     left: 0;
     height: 1px;
     width: 116px;
-    background-color: black;
+    background-color: var(--secondary-color);
 }
 
 
@@ -305,7 +328,7 @@ ul,li{
     min-height: 120vh;
     width: 100%; 
     position: relative;
-    /* background-color: #f7f7f7; */
+    /* background-color: var(--primary-color); */
     background: none;
     display: flex;
     justify-content: space-evenly;
@@ -314,6 +337,9 @@ ul,li{
     row-gap: 120px;
     margin-top: -100px;
     margin-bottom: 220px;
+    color: var(--secondary-color);
+
+
 }
 
 .child{
@@ -416,7 +442,7 @@ ul,li{
 
 
 .page3-after{
-    border-top: 2px solid black;
+    border-top: 2px solid var(--secondary-color);
     height: 2px;
     width: 97vw;
     margin: 0 auto;
@@ -425,6 +451,8 @@ ul,li{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--secondary-color);
+
 }
 
 .page3-after-text{
@@ -450,6 +478,8 @@ ul,li{
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
+    color: var(--secondary-color);
+
 }
 
 .page4 h1{
@@ -475,13 +505,13 @@ ul,li{
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.72px;
-    color: white;
-    background-color: black;
+    background-color: var(--secondary-color);
     border-radius: 70px;
     font-weight: 600;
     outline: none;
     border: none;
     margin-bottom: 30px;
+    color: var(--primary-color);
 }
 .page4-btn button:hover{
     color: rgb(207, 207, 207);
@@ -511,6 +541,8 @@ ul,li{
     align-items: start;
     padding: 24px;
     overflow: hidden;
+    color: var(--secondary-color);
+
 
 }
 
@@ -567,7 +599,7 @@ ul,li{
     margin-bottom: 32px;
     padding-bottom: 7px;
     display: inline;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 
@@ -584,6 +616,8 @@ ul,li{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--secondary-color);
+
 }
 .blank div i{
     font-size: 1.8rem;
@@ -624,13 +658,14 @@ ul,li{
         width: 70px;
 
         overflow: hidden;
-        
+        position: fixed;
     }
     #svg-container svg{
         /* position: fixed; */
         display: block;
         height: 62px;
         width: 70px;
+        
     }
 
     #svg-container #svg-logo{
@@ -645,13 +680,13 @@ ul,li{
         font-family: Helvetica;
         font-size: 12px;
         line-height: 18px;
-        color: #000000;
+        color: var(--secondary-color);
     }
     #nav #nav-part2 #links{
         display: none;
     }
     #links a{
-        color: #000000;
+        color: var(--secondary-color);
     }
     #nav-part2 #links{
         display: flex;
@@ -670,10 +705,12 @@ ul,li{
         font-weight: 400;
         height: 30px;
         width: 95px;
-        background-color: #f7f7f7;
+        background-color: var(--primary-color);
         margin-top: -6px;
         margin-right: 3px;
         border-radius: 40px;
+        position: fixed;
+
     }
 
     #page1{
@@ -758,7 +795,7 @@ ul,li{
     position: relative;
 }
 .text-page-section2 #third{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--secondary-color);
 }
 .text-page-section2 #first{
     text-align: center;
@@ -781,7 +818,7 @@ br{
     min-height: 120vh;
     width: 100%; 
     position: relative;
-    /* background-color: #f7f7f7; */
+    /* background-color: var(--primary-color); */
     background: none;
     display: flex;
     justify-content: space-evenly;
@@ -792,7 +829,7 @@ br{
 .child{
     height: 56vh;
     width: 88vw;
-    /* border: 2px solid black; */
+    /* border: 2px solid var(--secondary-color); */
     position: relative;
     display: flex;
     padding: 10vw;
@@ -838,8 +875,8 @@ br{
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.72px;
-    color: white;
-    background-color: black;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
     border-radius: 70px;
     font-weight: 600;
     outline: none;
@@ -943,7 +980,7 @@ br{
     margin-bottom: 100px;
     padding-bottom: 7px;
     display: inline;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 
